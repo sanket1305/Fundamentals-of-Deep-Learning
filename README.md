@@ -45,3 +45,27 @@ PyTorch, Matplotlib, Pandas
 
 #### Key Learnings:
 The model achieved high training accuracy but comparatively lower validation accuracy, indicating potential overfitting. This lab highlighted the importance of generalization and the need for techniques such as regularization or data augmentation to improve validation performance on more complex, real-world datasets.
+
+---
+
+### 🧠 Lab 3: Image Classification of ASL using Convolutional Neural Networks (CNNs)
+
+#### Objective:
+This lab advances the previous ASL image classification task by introducing Convolutional Neural Networks (CNNs)—a specialized architecture for image-based tasks. The exercise focuses on constructing deeper networks with enhanced feature extraction capabilities.
+
+#### Key Concepts Covered:
+- CNN-specific data preparation
+- Designing a CNN with multiple convolutional, pooling, and fully connected layers
+- Training and evaluating the CNN model on the ASL dataset
+- Interpreting training stability and generalization from accuracy trends
+
+#### Dataset Used:
+ASL Alphabet Dataset from Kaggle
+
+#### Frameworks & Tools:
+PyTorch, Pandas
+
+#### Key Learnings:
+Replacing the basic neural network with a CNN significantly boosted both training and validation accuracy, demonstrating the power of convolutional architectures for visual pattern recognition. However, fluctuations in validation accuracy hinted at generalization issues, emphasizing the need for further improvements such as more data, regularization, or augmentation to enhance model robustness.
+
+---
