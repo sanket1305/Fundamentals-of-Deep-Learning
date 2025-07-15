@@ -69,3 +69,46 @@ PyTorch, Pandas
 Replacing the basic neural network with a CNN significantly boosted both training and validation accuracy, demonstrating the power of convolutional architectures for visual pattern recognition. However, fluctuations in validation accuracy hinted at generalization issues, emphasizing the need for further improvements such as more data, regularization, or augmentation to enhance model robustness.
 
 ---
+
+### 🧪 Lab 4A: Data Augmentation of ASL Images
+
+#### Objective:
+This lab introduces data augmentation techniques to enhance the ASL dataset, thereby improving model generalization. It also covers saving trained models for future deployment.
+
+#### Key Concepts Covered:
+- Applying real-time image transformations using torchvision.transforms
+- Retraining the CNN model on augmented image data
+- Observing improvements in validation stability and reduction in overfitting
+- Saving model checkpoints to disk for inference use
+
+#### Dataset Used:
+ASL Alphabet Dataset from Kaggle
+
+#### Frameworks & Tools:
+PyTorch, Torchvision, Pandas, Matplotlib
+
+#### Key Learnings:
+Data augmentation proved effective in improving validation accuracy and reducing overfitting. While the training accuracy slightly decreased, the model demonstrated stronger generalization by being exposed to more diverse visual patterns. The resulting model was more robust and suitable for deployment scenarios.
+
+### 🚀 Lab 4B: Deploying a Model Trained on Augmented ASL Images
+
+#### Objective:
+This lab demonstrates how to deploy a pre-trained model for inference. It focuses on loading saved weights, adapting input formats, and evaluating the model on unseen images.
+
+#### Key Concepts Covered:
+- Loading a trained PyTorch model from disk
+- Preprocessing images with different formats (color, resolution) for inference
+- Performing real-time predictions on unfamiliar ASL images
+- Assessing model accuracy on diverse input data
+
+#### Dataset Used:
+ASL Alphabet Dataset from Kaggle (with custom test images)
+
+#### Frameworks & Tools:
+PyTorch, Torchvision, Pandas, Matplotlib
+
+#### Key Learnings:
+The deployed model successfully predicted ASL letters from new, high-resolution, and colored images—showcasing its ability to generalize beyond the original training distribution. This validated the effectiveness of both model architecture and the augmentation strategies used in prior stages.
+
+--- 
+
