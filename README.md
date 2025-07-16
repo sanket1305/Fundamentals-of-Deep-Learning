@@ -112,3 +112,42 @@ The deployed model successfully predicted ASL letters from new, high-resolution,
 
 --- 
 
+### 🐶 Lab 5A: An Automated Doggy Door Using a Pretrained Model
+
+#### Objective:
+This lab demonstrates how to use powerful pretrained models for real-world inference tasks with minimal setup. By leveraging Torchvision's pretrained classifiers, the goal is to simulate an intelligent doggy door that opens only for the household dog.
+
+#### Key Concepts Covered:
+- Loading a pretrained deep learning model (e.g., ResNet) via torchvision.models
+- Preparing and preprocessing custom images for model inference
+- Executing inference with pretrained weights on previously unseen images
+
+#### Dataset Used:
+Custom images from a local folder (e.g., household pet vs. other animals)
+
+#### Frameworks & Tools:
+PyTorch, Torchvision
+
+#### Key Learnings:
+This lab showcased how pretrained models can deliver accurate predictions with minimal development effort. By applying a few lines of code, a functional and intelligent image recognition system was created—demonstrating the utility of transfer learning in rapid prototyping and real-world applications.
+
+### 🐕 Lab 5B: A Presidential Doggy Door Using Transfer Learning
+
+#### Objective:
+In this continuation, the pretrained model is adapted via transfer learning to better distinguish between a specific household pet and distractors using a very small dataset.
+
+#### Key Concepts Covered:
+- Fine-tuning pretrained CNN architectures on small custom datasets
+- Freezing and unfreezing layers for selective retraining
+- Improving model accuracy via targeted transfer learning
+
+#### Dataset Used:
+Manually curated image folder with labeled pet/non-pet examples
+
+#### Frameworks & Tools:
+PyTorch, Torchvision
+
+#### Key Learnings:
+With only a small amount of labeled data, the transfer learning approach significantly improved the model’s accuracy and specificity. This lab highlighted how pretrained models, when carefully fine-tuned, can be adapted for niche tasks without the need for large-scale datasets or extensive training time—making them ideal for resource-constrained environments.
+
+---
