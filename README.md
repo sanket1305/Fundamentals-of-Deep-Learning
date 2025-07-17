@@ -1,175 +1,111 @@
-## 🧠 Fundamentals of Deep Learning
+# 🧠 Fundamentals of Deep Learning
 
-This repository contains a curated collection of hands-on labs completed as part of the NVIDIA Deep Learning Institute (DLI) course: Fundamentals of Deep Learning. The labs provide practical experience in building and training deep neural networks using real-world computer vision and natural language processing (NLP) tasks.
+This repository contains a curated collection of hands-on labs completed as part of the **NVIDIA Deep Learning Institute (DLI)** course: *Fundamentals of Deep Learning*. These labs provide practical experience in designing, training, and deploying deep learning models for both computer vision and natural language processing (NLP) tasks.
 
 ---
+
+## 📁 Project Structure
+
+```bash
+.
+├── cv_lab_1_handwritten_digits/
+├── cv_lab_2_asl_classification/
+├── cv_lab_3_asl_cnn/
+├── cv_lab_4a_asl_augmentation/
+├── cv_lab_4b_asl_deployment/
+├── cv_lab_5a_doggy_door_pretrained/
+├── cv_lab_5b_doggy_door_transfer/
+├── nlp_lab_transformers/
+├── final_assessment_fruit_classifier/
+└── README.md
+```
+
+## ⚙️ Technologies Used
+- Python
+- PyTorch
+- Torchvision
+- Pandas, Matplotlib
+- Hugging Face Transformers
+- PIL, glob
+
+## 🧪 Hands-On Exercises
 
 ### 🖊️ Lab 1: Handwritten Digit Recognition
 
-#### Objective:
-This lab introduces the foundational concepts of deep learning through a classic image classification task. You’ll explore the limitations of traditional programming approaches and understand how neural networks can solve pattern recognition problems effectively.
+- **Dataset**: MNIST
+- **Goal**: Build and train a simple neural network using PyTorch
+- **Key Skills**: Data loading, feedforward networks, evaluation
+- **Outcome**: High accuracy on digit classification, foundational DL pipeline understanding
 
-#### Key Concepts Covered:
-- Introduction to the MNIST dataset
-- Data loading and preprocessing using torchvision
-- Designing and training a simple feedforward neural network with PyTorch
-- Evaluating model performance on handwritten digits
+### 🤟 Lab 2: Image Classification of ASL
 
-#### Dataset Used:
-MNIST (70,000 grayscale images of handwritten digits, 28x28 pixels)
+- **Dataset**: ASL Alphabet from Kaggle
+- **Goal**: Train a basic image classifier
+- **Key Skills**: CNN introduction, image preprocessing
+- **Outcome**: Identified overfitting and the need for improved generalization
 
-#### Frameworks & Tools:
-PyTorch, Torchvision
+### 🧠 Lab 3: ASL Classification Using CNNs
 
-#### Key Learnings:
-This exercise demonstrated how to build a basic neural network for digit classification using PyTorch. By training the model on MNIST, it achieved high accuracy on unseen data, showcasing the capability of deep learning models to generalize from relatively small and structured datasets. It also reinforced the importance of proper data preparation and model architecture in achieving good performance.
-
----
-
-### 🤟 Lab 2: Image Classification of American Sign Language (ASL)
-
-#### Objective:
-This lab focuses on developing an image classification model to recognize American Sign Language (ASL) gestures. It covers the full model development pipeline—from data preprocessing to model evaluation—using a real-world image dataset.
-
-#### Key Concepts Covered:
-- Image preprocessing and data exploration using pandas and matplotlib
-- Building and compiling a Neural Network model in PyTorch
-- Training the model on labeled ASL gesture images
-- Analyzing training vs. validation accuracy to assess overfitting
-
-#### Dataset Used:
-ASL Alphabet Dataset from Kaggle
-
-#### Frameworks & Tools:
-PyTorch, Matplotlib, Pandas
-
-#### Key Learnings:
-The model achieved high training accuracy but comparatively lower validation accuracy, indicating potential overfitting. This lab highlighted the importance of generalization and the need for techniques such as regularization or data augmentation to improve validation performance on more complex, real-world datasets.
-
----
-
-### 🧠 Lab 3: Image Classification of ASL using Convolutional Neural Networks (CNNs)
-
-#### Objective:
-This lab advances the previous ASL image classification task by introducing Convolutional Neural Networks (CNNs)—a specialized architecture for image-based tasks. The exercise focuses on constructing deeper networks with enhanced feature extraction capabilities.
-
-#### Key Concepts Covered:
-- CNN-specific data preparation
-- Designing a CNN with multiple convolutional, pooling, and fully connected layers
-- Training and evaluating the CNN model on the ASL dataset
-- Interpreting training stability and generalization from accuracy trends
-
-#### Dataset Used:
-ASL Alphabet Dataset from Kaggle
-
-#### Frameworks & Tools:
-PyTorch, Pandas
-
-#### Key Learnings:
-Replacing the basic neural network with a CNN significantly boosted both training and validation accuracy, demonstrating the power of convolutional architectures for visual pattern recognition. However, fluctuations in validation accuracy hinted at generalization issues, emphasizing the need for further improvements such as more data, regularization, or augmentation to enhance model robustness.
-
----
+- **Dataset**: ASL Alphabet from Kaggle
+- **Goal**: Replace basic NN with CNN for better performance
+- **Key Skills**: Convolutional layers, pooling, model depth
+- **Outcome**: Improved accuracy; validation instability highlighted model tuning needs
 
 ### 🧪 Lab 4A: Data Augmentation of ASL Images
 
-#### Objective:
-This lab introduces data augmentation techniques to enhance the ASL dataset, thereby improving model generalization. It also covers saving trained models for future deployment.
-
-#### Key Concepts Covered:
-- Applying real-time image transformations using torchvision.transforms
-- Retraining the CNN model on augmented image data
-- Observing improvements in validation stability and reduction in overfitting
-- Saving model checkpoints to disk for inference use
-
-#### Dataset Used:
-ASL Alphabet Dataset from Kaggle
-
-#### Frameworks & Tools:
-PyTorch, Torchvision, Pandas, Matplotlib
-
-#### Key Learnings:
-Data augmentation proved effective in improving validation accuracy and reducing overfitting. While the training accuracy slightly decreased, the model demonstrated stronger generalization by being exposed to more diverse visual patterns. The resulting model was more robust and suitable for deployment scenarios.
+- **Dataset**: ASL Alphabet from Kaggle
+- **Goal**: Apply augmentation to improve generalization
+- **Key Skills**: torchvision.transforms, model retraining
+- **Outcome**: Increased validation accuracy and robustness
 
 ### 🚀 Lab 4B: Deploying a Model Trained on Augmented ASL Images
 
-#### Objective:
-This lab demonstrates how to deploy a pre-trained model for inference. It focuses on loading saved weights, adapting input formats, and evaluating the model on unseen images.
+- **Dataset**: Custom image folder
+- **Goal**: Load model and perform inference on unseen data
+- **Key Skill**s: Model loading, image formatting, inference
+- **Outcome**: Accurate predictions on colored, high-resolution images
 
-#### Key Concepts Covered:
-- Loading a trained PyTorch model from disk
-- Preprocessing images with different formats (color, resolution) for inference
-- Performing real-time predictions on unfamiliar ASL images
-- Assessing model accuracy on diverse input data
+### 🐶 Lab 5A: Automated Doggy Door Using Pretrained Model
 
-#### Dataset Used:
-ASL Alphabet Dataset from Kaggle (with custom test images)
+- **Dataset**: Custom image folder
+- **Goal**: Use pretrained model for pet image recognition
+- **Key Skills**: Transfer learning, Torchvision models
+- **Outcome**: Functional classification system with minimal code
 
-#### Frameworks & Tools:
-PyTorch, Torchvision, Pandas, Matplotlib
+### 🐕 Lab 5B: Presidential Doggy Door Using Transfer Learning
 
-#### Key Learnings:
-The deployed model successfully predicted ASL letters from new, high-resolution, and colored images—showcasing its ability to generalize beyond the original training distribution. This validated the effectiveness of both model architecture and the augmentation strategies used in prior stages.
-
---- 
-
-### 🐶 Lab 5A: An Automated Doggy Door Using a Pretrained Model
-
-#### Objective:
-This lab demonstrates how to use powerful pretrained models for real-world inference tasks with minimal setup. By leveraging Torchvision's pretrained classifiers, the goal is to simulate an intelligent doggy door that opens only for the household dog.
-
-#### Key Concepts Covered:
-- Loading a pretrained deep learning model (e.g., ResNet) via torchvision.models
-- Preparing and preprocessing custom images for model inference
-- Executing inference with pretrained weights on previously unseen images
-
-#### Dataset Used:
-Custom images from a local folder (e.g., household pet vs. other animals)
-
-#### Frameworks & Tools:
-PyTorch, Torchvision
-
-#### Key Learnings:
-This lab showcased how pretrained models can deliver accurate predictions with minimal development effort. By applying a few lines of code, a functional and intelligent image recognition system was created—demonstrating the utility of transfer learning in rapid prototyping and real-world applications.
-
-### 🐕 Lab 5B: A Presidential Doggy Door Using Transfer Learning
-
-#### Objective:
-In this continuation, the pretrained model is adapted via transfer learning to better distinguish between a specific household pet and distractors using a very small dataset.
-
-#### Key Concepts Covered:
-- Fine-tuning pretrained CNN architectures on small custom datasets
-- Freezing and unfreezing layers for selective retraining
-- Improving model accuracy via targeted transfer learning
-
-#### Dataset Used:
-Manually curated image folder with labeled pet/non-pet examples
-
-#### Frameworks & Tools:
-PyTorch, Torchvision
-
-#### Key Learnings:
-With only a small amount of labeled data, the transfer learning approach significantly improved the model’s accuracy and specificity. This lab highlighted how pretrained models, when carefully fine-tuned, can be adapted for niche tasks without the need for large-scale datasets or extensive training time—making them ideal for resource-constrained environments.
-
----
+- **Dataset**: Small custom dataset
+- **Goal**: Fine-tune a pretrained model with minimal data
+- **Key Skills**: Layer freezing, model fine-tuning
+- **Outcome**: Achieved high accuracy with a small dataset, showcasing the power of transfer learning
 
 ### 🗣️ Lab 6: Natural Language Processing with Transformers
 
-#### Objective:
-This lab provides a practical introduction to Natural Language Processing (NLP) using transformer-based models. It covers text tokenization, embedding generation, and inference using a pretrained large language model (LLM) to answer questions from text passages.
+- **Dataset**: Sample sentences
+- **Goal**: Perform QA using BERT-style transformer
+- **Key Skills**: Tokenization, embeddings, transformer inference
+- **Outcome**: Used an LLM to accurately extract answers from text passages
 
-#### Key Concepts Covered:
-- Tokenizing raw text for neural network input
-- Understanding how text embeddings encode semantic meaning
-- Applying a transformer-based model (e.g., BERT) for question answering
-- Performing inference to extract contextual information from sentences
+### 🏁 Final Assessment: Fresh vs. Rotten Fruit Classifier
 
-#### Dataset Used:
-Sample textual data (custom sentences); no external dataset required
+- **Objective**: Build a model that classifies fresh vs. rotten fruit with ≥92% validation accuracy
+- **Tools Used**: PyTorch, Torchvision, PIL, Glob
+- **Techniques Applied**: Transfer learning, data augmentation, fine-tuning
+- **Result**: ✅ Achieved 97.26% validation accuracy
+- **Outcome**: Validated ability to build a production-ready classifier using limited data and pretrained models
 
-#### Frameworks & Tools:
-PyTorch, Hugging Face Transformers
+### 🎓 Key Learning Outcomes
 
-#### Key Learnings:
-This lab demonstrated how LLMs such as BERT can be used to extract context-aware answers from a sequence of sentences. It highlighted the power of pretrained NLP models in understanding natural language with minimal preprocessing. Although BERT was once state-of-the-art, the exercise also encouraged exploration of newer LLMs, many of which are accessible on build.nvidia.com for further experimentation.
+- Designed, trained, and evaluated deep learning models using PyTorch
+- Applied convolutional neural networks (CNNs) for image-based tasks
+- Leveraged transfer learning and pretrained models for low-data scenarios
+- Implemented data augmentation to reduce overfitting and improve generalization
+- Used transformer-based models for natural language processing
+- Deployed trained models for real-world inference tasks
 
----
+### 📜 License
+This repository is for educational purposes as part of the NVIDIA DLI course. Please consult NVIDIA DLI Terms of Use for more information.
+
+### 🙌 Acknowledgements
+Special thanks to NVIDIA Deep Learning Institute for providing the content, tools, and cloud infrastructure to complete this hands-on learning experience.
+
