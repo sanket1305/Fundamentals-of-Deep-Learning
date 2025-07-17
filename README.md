@@ -85,9 +85,9 @@ This repository contains a curated collection of hands-on labs completed as part
 - Used transformer-based models for natural language processing
 - Deployed trained models for real-world inference tasks
 
-### 📜 License
+## 📜 License
 This repository is for educational purposes as part of the NVIDIA DLI course. Please consult NVIDIA DLI Terms of Use for more information.
 
-### 🙌 Acknowledgements
+## 🙌 Acknowledgements
 Special thanks to NVIDIA Deep Learning Institute for providing the content, tools, and cloud infrastructure to complete this hands-on learning experience.
 
