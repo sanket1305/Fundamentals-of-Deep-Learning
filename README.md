@@ -151,3 +151,25 @@ PyTorch, Torchvision
 With only a small amount of labeled data, the transfer learning approach significantly improved the model’s accuracy and specificity. This lab highlighted how pretrained models, when carefully fine-tuned, can be adapted for niche tasks without the need for large-scale datasets or extensive training time—making them ideal for resource-constrained environments.
 
 ---
+
+### 🗣️ Lab 6: Natural Language Processing with Transformers
+
+#### Objective:
+This lab provides a practical introduction to Natural Language Processing (NLP) using transformer-based models. It covers text tokenization, embedding generation, and inference using a pretrained large language model (LLM) to answer questions from text passages.
+
+#### Key Concepts Covered:
+- Tokenizing raw text for neural network input
+- Understanding how text embeddings encode semantic meaning
+- Applying a transformer-based model (e.g., BERT) for question answering
+- Performing inference to extract contextual information from sentences
+
+#### Dataset Used:
+Sample textual data (custom sentences); no external dataset required
+
+#### Frameworks & Tools:
+PyTorch, Hugging Face Transformers
+
+#### Key Learnings:
+This lab demonstrated how LLMs such as BERT can be used to extract context-aware answers from a sequence of sentences. It highlighted the power of pretrained NLP models in understanding natural language with minimal preprocessing. Although BERT was once state-of-the-art, the exercise also encouraged exploration of newer LLMs, many of which are accessible on build.nvidia.com for further experimentation.
+
+---
