@@ -2,24 +2,6 @@
 
 This repository contains a curated collection of hands-on labs completed as part of the **NVIDIA Deep Learning Institute (DLI)** course: *Fundamentals of Deep Learning*. These labs provide practical experience in designing, training, and deploying deep learning models for both computer vision and natural language processing (NLP) tasks.
 
----
-
-## 📁 Project Structure
-
-```bash
-.
-├── cv_lab_1_handwritten_digits/
-├── cv_lab_2_asl_classification/
-├── cv_lab_3_asl_cnn/
-├── cv_lab_4a_asl_augmentation/
-├── cv_lab_4b_asl_deployment/
-├── cv_lab_5a_doggy_door_pretrained/
-├── cv_lab_5b_doggy_door_transfer/
-├── nlp_lab_transformers/
-├── final_assessment_fruit_classifier/
-└── README.md
-```
-
 ## ⚙️ Technologies Used
 - Python
 - PyTorch
